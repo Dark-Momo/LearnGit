@@ -1,0 +1,9 @@
+**********************
+Git Knowledge Summary
+**********************
+
+1. Three Git Stage
+- Modified  : If a file has been modified, but not yet added (git add) to staging, it is in Modified stage;
+- Staging   : All files that have been "git add", but not yet commited (git commit). There are shown as a list of green file names, and are 
+              waiting to be commited;
+- Committed : All files that have been commited by "git commit"; 
