@@ -2,8 +2,17 @@
 Git Knowledge Summary
 **********************
 
-1. Three Git Stage
-- Modified  : If a file has been modified, but not yet added (git add) to staging, it is in Modified stage;
+1. Three Git Area
+- Modified  : If a file has been modified, but not yet added (git add) to staging, it is in Modified area;
 - Staging   : All files that have been "git add", but not yet commited (git commit). There are shown as a list of green file names, and are 
               waiting to be commited;
-- Committed : All files that have been commited by "git commit"; 
+- Committed : All files that have been commited by "git commit";
+
+2. 'git status' shows files in both Modified and staged area.
+
+3. How to un-stage a added file?
+After you "git add" a file (the filename has become green), and the you want to undo this operation, you use command line:
+---------------------------
+git restore --staged <file>
+---------------------------
+to undo this. Then the file would be in Modified aread again, with filename red.
